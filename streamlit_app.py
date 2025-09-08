@@ -1,12 +1,11 @@
-# streamlit_app.py — Minimal Streamlit UI for your existing RAG
-# Option A: imports your existing functions from rag_cli.py (no refactor needed)
+# streamlit_app.py — Minimal Streamlit UI for the existing RAG
 
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 import streamlit as st
 
-# Reuse your working logic from the CLI script
+# Reuse the working logic from the CLI script
 from rag_cli import (
     ensure_dirs,
     load_index,
