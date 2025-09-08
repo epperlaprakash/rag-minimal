@@ -1,4 +1,5 @@
 sentence-transformers
 faiss-cpu
 numpy
+streamlit 
 # openai   # optional, only if using OpenAI API

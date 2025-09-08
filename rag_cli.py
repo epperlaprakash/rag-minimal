@@ -30,6 +30,7 @@ INDEX_PATH = os.path.join(ART_DIR, "index.faiss")
 CHUNKS_PATH = os.path.join(ART_DIR, "chunks.pkl")
 METAS_PATH = os.path.join(ART_DIR, "metas.pkl")
 TOP_K = 3
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2")
 
 
 # ============== Small helpers ==============
@@ -166,11 +167,11 @@ def answer_with_openai(prompt: str) -> str:
         return f"(OpenAI error: {e})"
 
 def answer_with_ollama(prompt: str) -> str:
-    """Call a local Ollama model (llama3 by default)."""
+    """Call a local Ollama model (llama3.2 by default)."""
     try:
         import subprocess
         run = subprocess.run(
-            ["ollama", "run", "llama3"],   # change to "llama3.2" if you prefer smaller/faster
+            ["ollama", "run", OLLAMA_MODEL],   # prefer "llama3.2" for smaller/faster
             input=prompt.encode("utf-8"),  # send prompt via stdin (compatible)
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
