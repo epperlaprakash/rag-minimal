@@ -173,7 +173,7 @@ python3 rag_cli.py
 - **Embeddings:** `sentence-transformers/all-MiniLM-L6-v2`  
 - **Vector store:** FAISS (inner product on normalized vectors = cosine)  
 - **LLM:** Ollama Llama 3 by default (or OpenAI if `OPENAI_API_KEY` is set)  
-- **Language:** Python 3.11  
+- **Language:** Python 3.11 
 
 ---
 
