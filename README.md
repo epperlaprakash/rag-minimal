@@ -66,7 +66,7 @@ ollama pull llama3.2
 ```
 Quick test:
 ```bash
-ollama run llama3 "hello"
+ollama run llama3.2 "hello"
 ```
 
 ### Option B — OpenAI (no local install)
