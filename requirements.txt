@@ -1,0 +1,4 @@
+sentence-transformers
+faiss-cpu
+numpy
+# openai   # optional, only if using OpenAI API
