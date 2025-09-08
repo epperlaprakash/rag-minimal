@@ -19,8 +19,8 @@ from sentence_transformers import SentenceTransformer
 # Vector store
 import faiss
 
-# ---------- Settings (you can tweak these) ----------
-DATA_DIR = "data"           # where your .txt files live
+# ---------- Settings ----------
+DATA_DIR = "data"           # where .txt files live
 ART_DIR = "artifacts"       # where we save the index and metadata
 CHUNK_SIZE = 800            # characters per chunk
 CHUNK_OVERLAP = 120         # how much to overlap chunks
