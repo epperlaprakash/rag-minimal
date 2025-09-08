@@ -28,9 +28,11 @@ rag-minimal/
 **Requirements:**
     Python 3.10+
     Python packages: 
-    ```bash
+
+    ```bash 
     pip install -r requirements.txt
     ```
+
     One LLM path:
         Ollama (local, free) — recommended, or
         OpenAI API key (no local install)
@@ -47,6 +49,7 @@ Option A — Ollama (local, free)
 Download & install: https://ollama.com/download
 Open the Ollama app once so the service starts.
 In Terminal, pull a model:
+
 ```bash
 ollama pull llama3
 ```
@@ -65,12 +68,14 @@ Create an API key: https://platform.openai.com
 Set the key in your shell:
 
     macOS/Linux:
+
     ```bash
     export OPENAI_API_KEY="sk-..."
     ```
 
 
     Windows PowerShell:
+
     ```bash
     $env:OPENAI_API_KEY="sk-..."
     ```
@@ -80,6 +85,7 @@ The script will auto-use OpenAI if OPENAI_API_KEY is set; otherwise it uses Olla
 
 ⚙️ **Setup**
 macOS / Linux
+
 ```bash 
 cd rag-minimal
 python3 -m venv .venv
@@ -88,6 +94,7 @@ pip install -r requirements.txt
 ```
 
 Windows (PowerShell)
+
 ```bash
 cd rag-minimal
 py -m venv .venv
@@ -100,10 +107,13 @@ pip install -r requirements.txt
 Put at least 3 .txt files in data/ (the repo includes examples).
 
 ▶️ Run
-python3 rag_cli.py     # macOS/Linux
+```bash
+python3 rag_cli.py 
+```    # macOS/Linux
 # or
+```bash
 python rag_cli.py      # Windows
-
+```
 
 You’ll see:
 
